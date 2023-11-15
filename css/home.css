@@ -1,0 +1,107 @@
+@font-face {
+    font-family: MuseoSans500;
+    src: url("../fonts/MuseoSans_500.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: MuseoSans500;
+}
+
+.navbar-item {
+    color: white;
+}
+
+.carussel {
+    background-color: #183859;
+    margin-top: 2%;
+    height: 450px;
+    width: 1300px;
+    margin-left: 20%;
+
+}
+
+.carussel .slogan {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+.carussel .logo-seccion {
+    width: 200px;
+    height: 200px;
+
+    margin-top: 10%;
+
+}
+
+.carussel .boton-slogan {
+
+    margin-top: 2%;
+    font-size: large;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.imagen-carusel {
+    width: 1500px;
+    height: 450px;
+}
+.seccion-izquierdo{
+    
+    height: 400px;
+    background-color: rgb(189, 186, 186);
+}
+
+.alcalde{
+    height: 250px;
+    margin-top: 15%;
+    border-radius: 50%;
+    margin-left: 80%;
+}
+.descripcion{
+    text-align: justify;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size: 20px;
+}
+.mini-footer{
+    background-color: rgb(189, 186, 186);
+    margin-left: 25%;
+    margin-top: 3%;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.nombre-alcalde{
+    margin-right: 50%;
+    font-size: 25px;
+
+}
+.fa-brands{
+    font-size: 80px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.seccion-noticias{
+    background-color: rgb(189, 186, 186);
+    margin-top: 2%;
+    height: 350px;
+    width: 1300px;
+    margin-left: 20%;
+}
+.imagen-noticia img{
+    margin-top: 3%;
+    width: 250px;
+}
+.contenido-noticias{
+    margin-top: 5%;
+    font-size: 14px;
+    text-align: justify;
+}
