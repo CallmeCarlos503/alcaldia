@@ -1,0 +1,25 @@
+.noticia-detalles{
+    margin-top: 2%;
+}
+.imagen-noticia{
+    width: 4550px;
+}
+.noticia-detalles h1{
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: MuseumSans900;
+}
+.noticia-detalles p{
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.noticia-detalles h2{
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    font-family: MuseumSans900;
+}
