@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: MuseoSans500;
+}
+
 @font-face {
     font-family: MuseoSans500;
     src: url("../fonts/MuseoSans_500.otf") format("opentype");
@@ -5,4 +11,32 @@
 @font-face{
     font-family: MuseumSans900;
     src: url("../fonts/MuseoSans_900.otf") format("opentype");
+}
+
+
+
+
+.activado{
+    border-radius: 8%;
+    border: 1px solid white;
+    padding: 15px;
+    
+}
+
+.navbar-item {
+    color: white;
+    margin-right: 10px;
+}
+.navbar{
+    background-color: #183859;
+}
+/*!  Decision al cambio de grupo*/
+
+.navbar-item{
+    transition: transform .5s;
+}
+.navbar-item:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 10px;
 }

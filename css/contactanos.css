@@ -1,0 +1,62 @@
+body .guia{
+    background-color: #183859;
+    margin-top: 3%;
+    width: 1300px;
+    height: 500px;
+    margin-left: 19%;
+
+}
+.relleno img{
+    margin-top: -2%;
+    width: 650px;
+    height: 500px;
+}
+.contenido-telefono{
+    color: white;
+}
+.texto-telefono {
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-left: 25%;
+    text-align: center;
+}
+.texto-telefono i{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.texto-telefono h1{
+    font-size: 35px;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-family: "MuseumSans900";
+}
+.texto-telefono h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-family: "MuseumSans900";
+}
+.texto-telefono p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-family: "MuseumSans900";
+}
+.texto-telefono h2{
+    font-size: 35px;
+    margin-bottom: 3%;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: "MuseumSans900";
+    border: 1px solid;
+    padding: 3%;
+    border-radius: 25px;
+}
+.tabla h3{
+    margin-top: 2%;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
