@@ -23,3 +23,19 @@
     text-align: justify;
     font-family: MuseumSans900;
 }
+.noticias-seleccion{
+    background-color: gainsboro;
+    width: 1300px;
+    height: 450px;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding: 25px;
+}
+.noticias img{
+    margin-left:85px;
+}
+
+.noticias p{
+    text-align: center;
+    margin-top: 10%;
+}
