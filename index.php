@@ -28,21 +28,21 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item activado">
+                <a class="navbar-item activado" href="/index.php">
                     HOME
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="">
                     HISTORIA
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="./views/servicios.php">
                     SERVICIOS
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="./views/noticias.php">
                     NOTICIAS
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="./views/Contactanos.php">
                     CONTACTANOS
                 </a>
 
