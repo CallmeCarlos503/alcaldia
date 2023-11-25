@@ -21,9 +21,9 @@
       style="background-color: #183859"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        
           <img src="../assets/logos/logo.png" width="112" height="28" />
-        </a>
+       
 
         <a
           role="button"
