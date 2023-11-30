@@ -122,6 +122,7 @@
         $REDSOCIAL2 = $row['REDSOCIAL2'];
         $REDSOCIAL3 = $row['REDSOCIAL3'];
         $DESCRIPCION = $row['DESCRIPCION'];
+        
         echo "
             <section class='carussel' style='background-color: white;'>
             <div class='container text-center'>
