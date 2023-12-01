@@ -27,11 +27,11 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item"> HOME </a>
-        <a class="navbar-item"> HISTORIA </a>
-        <a class="navbar-item"> SERVICIOS </a>
-        <a class="navbar-item activado"> NOTICIAS </a>
-        <a class="navbar-item"> CONTACTANOS </a>
+        <a class="navbar-item" href="index.php" > HOME </a>
+        <a class="navbar-item" href=""> HISTORIA </a>
+        <a class="navbar-item" href="servicios.php"> SERVICIOS </a>
+        <a class="navbar-item activado" href="#"> NOTICIAS </a>
+        <a class="navbar-item" href="Contactanos.php"> CONTACTANOS </a>
       </div>
     </div>
   </nav>
