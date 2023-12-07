@@ -74,11 +74,11 @@
             consectetur adipisicing elit. Quasi, quibusdam. Quasi, quibusdam.
           </p>
           <br />
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
+          <img class="img-not"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
 
           <h2>SUB ENCABEZADOS EN ESTA AREA DE TEXTO EN BASE DE DATOS</h2>
           <br />
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
+          <img class="img-not"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
   <section class="noticias-seleccion">
     <div class="columns noticias">
       <div class="column">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
+        <img class="noti-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           aspernatur eligendi velit
@@ -97,7 +97,7 @@
         </center>
       </div>
       <div class="column">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
+        <img class="noti-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           aspernatur eligendi velit
@@ -108,7 +108,7 @@
         </center>
       </div>
       <div class="column">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
+        <img class="noti-img"src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           aspernatur eligendi velit

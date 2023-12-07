@@ -4,6 +4,13 @@
 .imagen-noticia{
     width: 4550px;
 }
+
+/*!estilo para imagenes individuales*/
+.img-not {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+  }
+
 .noticia-detalles h1{
     margin-top: 2%;
     font-size: 20px;
@@ -34,6 +41,16 @@
 .noticias img{
     margin-left:85px;
 }
+
+/*!estilo para las tres imagenes*/
+.noti-img {
+    transition: transform 0.3s ease;
+}
+
+.noti-img:hover{
+    transform: scale(1.2);
+}
+
 
 .noticias p{
     text-align: center;
