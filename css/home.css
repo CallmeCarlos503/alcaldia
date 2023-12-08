@@ -87,9 +87,19 @@
     margin-left: 8%;
 }
 
+
+
 .imagen-noticia img {
     margin-top: 3%;
     width: 250px;
+    transition: transform 0.3s ease;
+} 
+
+/* aqui probamos */
+
+
+.imagen-noticia img:hover{
+    transform: scale(1.1);
 }
 
 .contenido-noticias {
