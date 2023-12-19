@@ -27,7 +27,7 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="index.php" > HOME </a>
+        <a class="navbar-item" href="index.php"> HOME </a>
         <a class="navbar-item" href=""> HISTORIA </a>
         <a class="navbar-item" href="servicios.php"> SERVICIOS </a>
         <a class="navbar-item activado" href="#"> NOTICIAS </a>
@@ -35,89 +35,93 @@
       </div>
     </div>
   </nav>
+  <?php include_once('../controllers/dbAlcaldia.php')
+  ?>
+  <?php
 
-  <section class="noticia-detalles">
-    <div class="container text-center">
-      <div class="row align-items-start">
-        <div class="col-8">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" alt="" class="imagen-noticia" />
+  //isset con ID
+  if (isset($_REQUEST['ID'])) {
+    $ID = $_REQUEST['ID'];
+    $query3 = 'SELECT * FROM noticia where ID=' . $ID;
+  } else {
+    $query3 = 'SELECT * FROM noticia ORDER BY ID ASC LIMIT 1';
+  }
+  $result3 = $conn->query($query3);
+  if (!$result3) {
+    die("Error en la consulta: " . $conn->error);
+  }
+  while ($row = $result3->fetch_assoc()) {
+    $TITULO = $row['TITULO'];
+    $SUBENCABEZADO = $row['SUBENCABEZADO'];
+    $COLUMNA1 = $row['COLUMNA1'];
+    $COLUMNA2 = $row['COLUMNA2'];
+    $IMAGEN1 = $row['IMAGEN1'];
+    $IMAGEN2 = $row['IMAGEN2'];
+    $IMAGEN3 = $row['IMAGEN3'];
+  ?>
 
-          <h1>[TITULO PRINCIPAL DE LA NOTICIA]</h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-            culpa iusto mollitia quos, quis sapiente rem porro unde quas,
-            accusamus eveniet sed voluptatem dicta nobis, minima neque maiores
-            odit hic. Ullam magni incidunt illo culpa at odit laborum
-            repudiandae consequuntur a nobis tempore saepe repellat,
-            aspernatur reiciendis necessitatibus impedit optio excepturi. Cum
-            voluptas reiciendis, ea omnis quis nam quibusdam eaque. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore
-            laboriosam harum dolorem quos dolores rem accusamus repellendus
-            vitae! Voluptate, odio sequi facilis voluptatibus cum non quos
-            aspernatur laborum qui? Deleniti voluptates, similique ipsa
-            explicabo molestiae sint, nostrum debitis earum quo officiis
-            nesciunt at? Error obcaecati ex ad natus praesentium, inventore
-            consequatur similique explicabo iure reiciendis exercitationem at,
-            quia libero! Est voluptate qui nostrum optio dolor. Earum autem
-            nobis cupiditate adipisci incidunt iure repellat voluptatibus
-            quisquam placeat quia ratione, odit saepe nam assumenda laborum
-            quod tempora nostrum quas molestias laudantium.
-          </p>
-        </div>
-        <div class="col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Provident, exercitationem? Sequi distinctio ipsa odio fugit facere
-            assumenda quas mollitia tempora totam aperiam, ipsum hic
-            asperiores a optio rerum, error non. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Quasi, quibusdam. Quasi, quibusdam.
-          </p>
-          <br />
-          <img class="img-not"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
+    <section class="noticia-detalles">
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col-8">
+            <img src='<?php echo $IMAGEN1 ?>' alt="" class="imagen-noticia" />
 
-          <h2>SUB ENCABEZADOS EN ESTA AREA DE TEXTO EN BASE DE DATOS</h2>
-          <br />
-          <img class="img-not"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfpe-iLnaQI1OiW6Hq2QD5tLCEYnoGAkQP069uyfyoUXZkwPxYzpkHUEDRd5x67IpLxk&usqp=CAU" width="450px" />
+            <h1><?php echo $TITULO ?></h1>
+            <br />
+            <p>
+              <?php
+              echo $COLUMNA1;
+              ?>
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <?php
+              echo $COLUMNA2;
+              ?>
+            </p>
+            <br />
+            <img class="img-not" src='<?php echo $IMAGEN2 ?>' width="450px" />
+
+            <h2><?php echo $SUBENCABEZADO ?></h2>
+            <br />
+            <img class="img-not" src='<?php echo $IMAGEN3 ?>' width="450px" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <?php
+  }
+  ?>
   <section class="noticias-seleccion">
     <div class="columns noticias">
-      <div class="column">
-        <img class="noti-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
+      <?php
+      $query2 = "SELECT * FROM noticia ORDER BY ID ASC LIMIT 3";
+      $result2 = $conn->query($query2);
+      if (!$result2) {
+        die("Error en la consulta: " . $conn->error);
+      }
+      while ($row = $result2->fetch_assoc()) {
+        $TITULO = $row["TITULO"];
+        $IMAGENN = $row["IMAGEN1"];
+        $COLUMNA1 = $row["COLUMNA1"];
+        $ID = $row["ID"];
+        $TITULO = strtoupper($TITULO);
+        echo "
+                    <div class='column'>
+        <img class='noti-img' src='$IMAGEN1' width=200px height=250px />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          aspernatur eligendi velit
-        </p>
+         $TITULO;
+        </p> 
         <br>
         <center>
-          <a href="" class="btn btn-dark"> ver mas</a>
+          <a href='noticias.php?ID=$ID' class='btn btn-dark'> ver mas</a>
         </center>
       </div>
-      <div class="column">
-        <img class="noti-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          aspernatur eligendi velit
-        </p>
-        <br>
-        <center>
-          <a href="" class="btn btn-dark"> ver mas</a>
-        </center>
-      </div>
-      <div class="column">
-        <img class="noti-img"src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlaceholderLC.png" width="250px" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          aspernatur eligendi velit
-        </p>
-        <br>
-        <center>
-          <a href="" class="btn btn-dark"> ver mas</a>
-        </center>
-      </div>
+                    
+                    ";
+      }
+      ?>
     </div>
   </section>
   <br />

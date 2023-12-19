@@ -171,7 +171,7 @@
         <div class="container text-center">
             <div class="row align-items-start">
                 <?php
-                $query2 = "SELECT * FROM noticia";
+                $query2 = "SELECT * FROM noticia ORDER BY ID ASC LIMIT 3";
                 $result2 = $conn->query($query2);
                 if (!$result2) {
                     die("Error en la consulta: " . $conn->error);
