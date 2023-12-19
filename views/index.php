@@ -138,10 +138,16 @@
                     <footer class='mini-footer'>
                         <div class='redes-alcalde'>
                             <div class='container text-center'>
-                                <i class='fa-brands fa-facebook-f iconos-alcalde'>
+                            <a href='$REDSOCIAL1' class='iconografia'>
+                            <i class='fa-brands fa-facebook-f iconos-alcalde'>
                                 </i>
+                            </a>
+                                <a href='$REDSOCIAL2' class='iconografia'>
                                 <i class='fa-brands fa-square-instagram iconos-alcalde'></i>
+                                </a>
+                                <a href='$REDSOCIAL3' class='iconografia'>
                                 <i class='fa-brands fa-square-x-twitter iconos-alcalde'></i>
+                                </a>
                                 <div class='row align-items-start'>
 
                                     <div class='col-4 iconos'>

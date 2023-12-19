@@ -111,7 +111,7 @@
                     <div class='column'>
         <img class='noti-img' src='$IMAGEN1' width=200px height=250px />
         <p>
-         $TITULO;
+         $TITULO
         </p> 
         <br>
         <center>

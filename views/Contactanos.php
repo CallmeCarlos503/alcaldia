@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <?php include_once('../controllers/dbAlcaldia.php')?>
   <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #183859">
     <div class="navbar-brand">
 
@@ -70,15 +71,44 @@
       <table class="table is-bordered tabla-telefono" style="margin-top: 5%;">
         <tr>
           <td class="distritos">
-            Example districto
+            Distritos
           </td>
           <td class="secciones">
-            example de nombramientos
+            Nombre
           </td>
           <td class="extensiones">
             extension
           </td>
         </tr>
+        <?php
+  $query2 = "SELECT * FROM CONTACTOS";
+  $result2 = $conn->query($query2);
+  if (!$result2) {
+    die("Error en la consulta: " . $conn->error);
+  }
+  while ($row = $result2->fetch_assoc()) {
+    $NOMBRE=$row["NOMBRE"];
+    $EXTENSION=$row["EXTENSION"];
+    $DISTRITOS=$row["DISTRITOS"];
+    $ID_ESTADO=$row["ID_ESTADO"];
+    if ($ID_ESTADO == 1) {
+
+  ?>
+  <tr>
+    <td class="distritos">
+      <?php echo $DISTRITOS?>
+    </td>
+    <td class="secciones">
+      <?php echo $NOMBRE?>
+    </td>
+    <td class="extensiones">
+      <?php echo $EXTENSION?>
+    </td>
+  </tr>
+  <?php
+    }
+  }
+  ?>
       </table>
     </div>
   </section>
