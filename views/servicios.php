@@ -45,6 +45,19 @@
 
   </section>
   <section class="servicios">
+  <?php
+      $query2 = "SELECT * FROM servicios";
+      $result2 = $conn->query($query2);
+      if (!$result2) {
+        die("Error en la consulta: " . $conn->error);
+      }
+      while ($row = $result2->fetch_assoc()) {
+        $TITULO = $row["TITULO"];
+        $IMAGENN = $row["IMAGEN1"];
+        $COLUMNA1 = $row["COLUMNA1"];
+        $ID = $row["ID"];
+        $TITULO = strtoupper($TITULO);
+        ?>
     <div class="columns">
       <div class="column servicio-imagen">
         <img src="../assets/logos/MicrosoftTeams-image (2).png" alt="">
@@ -69,9 +82,7 @@
 
     </div>
   </section>
- <?php
  
- ?>
   <script>
     
     function myFunction() {
