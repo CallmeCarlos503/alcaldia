@@ -37,12 +37,12 @@
     </div>
   </nav>
   <section class="search">
-
-
-    <input class="input" type="text" id="searchInput" placeholder="Buscar Unidad">
-    <button class="btn btn-outline-primary" id="'searchButton" style="margin-top: 10px;margin-left:45%;font-size:20px" onclick="busco()">
-      buscar
-    </button>
+    <form id="searchForm">
+      <input type="text" class="input" id="searchInput" placeholder="Ingresa tu búsqueda">
+      <button type="submit" class="btn btn-outline-primary" id="'searchButton" style="margin-top: 10px;margin-left:45%;font-size:20px">
+        Buscar
+      </button>
+    </form>
 
   </section>
 
@@ -89,34 +89,14 @@
           </div>
         </section>
       </div>
-    <?php
+  <?php
     }
   }
-    ?>
-    <script>
-      //busqueda a tiempo real
-      function busco() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("searchInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("searchResults");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName("td")[0];
-          if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
-          }
-        }
-      }
-    </script>
+  ?>
+  <script src="../js/script.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
